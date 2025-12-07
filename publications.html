@@ -6,64 +6,119 @@
   <title>Publications | Ziwen Teuber</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f5f7fa;
-      color: #222;
-      line-height: 1.6;
-    }
+  /* GENERAL STYLES */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
 
-    /* NAVIGATION */
+  /* NAVIGATION */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #2d3e50;
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* CONTAINER */
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  /* SECTIONS */
+  section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  /* LIST ITEMS */
+  ul li {
+    margin-bottom: 1em;
+    word-wrap: break-word; /* prevents long links from overflowing */
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2d3e50;
+    color: white;
+    margin-top: 2rem;
+  }
+
+  /* RESPONSIVE STYLES */
+  @media (max-width: 900px) {
+    section {
+      padding: 1.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
     nav {
-      display: flex;
-      justify-content: center;
-      background: #2d3e50;
-      padding: 1rem;
-      gap: 2rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
     }
 
-    /* CONTENT */
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
+    nav a {
+      font-size: 1rem;
     }
 
     section {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1rem;
     }
 
     h2 {
-      margin-top: 0;
+      font-size: 1.2rem;
     }
 
-    /* Doppeltzeiliger Abstand zwischen Publikationen */
-    ul li {
-      margin-bottom: 1em;
+    body {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      font-size: 0.9rem;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #2d3e50;
-      color: white;
-      margin-top: 2rem;
+    h2 {
+      font-size: 1.1rem;
     }
-  </style>
+  }
+</style>
+
 </head>
 <body>
 
